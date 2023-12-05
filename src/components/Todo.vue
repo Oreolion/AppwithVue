@@ -208,7 +208,7 @@ p {
 }
 
 p input {
-  width: 6rem;
+  width: 5.5rem;
   height: 2.5rem;
   background-color: rgba(225, 225, 225, 0.5);
   text-align: center;
@@ -223,9 +223,11 @@ p input[placeholder] {
     color: #fff;
 }
 
-.container p {
+.container h1 + p {
   color: #f9d5b2;
   margin-bottom: 2rem;
+  max-width: 25rem;
+
 }
 
 .todo__section p {
