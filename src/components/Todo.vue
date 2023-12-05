@@ -195,12 +195,16 @@ export default {
   text-shadow: 1px 4px 1px rgba(0, 100, 0, 0.671);
   display: flex;
   gap: 1rem;
+  white-space: nowrap;
+  max-width: 27.5rem;
 }
 
 p {
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
+  max-width: 27.5rem;
+
 }
 
 p input {
