@@ -196,14 +196,14 @@ export default {
   display: flex;
   gap: 1rem;
   white-space: nowrap;
-  max-width: 27.5rem;
+  max-width: 27rem;
 }
 
 p {
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
-  max-width: 27.5rem;
+  max-width: 26rem;
 
 }
 
@@ -249,6 +249,7 @@ main h1 {
 
 main p {
   color: green;
+  max-width: 26rem;
 }
 
 .done .textbox {
