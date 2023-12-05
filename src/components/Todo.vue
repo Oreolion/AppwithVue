@@ -205,14 +205,18 @@ p {
 
 p input {
   width: 6rem;
-  height: 2rem;
+  height: 2.5rem;
   background-color: rgba(225, 225, 225, 0.5);
   text-align: center;
   color: #fff;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.1rem;
   outline: none;
   border: none;
+}
+
+p input[placeholder] {
+    color: #fff;
 }
 
 .container p {
@@ -387,7 +391,7 @@ main p {
 
 @media (max-width: 650px) {
   .container {
-    width: 28rem;
+    max-width: 28rem;
   }
 
   main h1 {
@@ -417,6 +421,10 @@ main p {
 }
 
 @media (max-width: 450px) {
+
+    .container {
+    max-width: 26rem;
+  }
   .textbox {
     width: 7rem;
   }
