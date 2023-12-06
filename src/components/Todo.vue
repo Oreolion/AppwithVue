@@ -319,6 +319,7 @@ main p {
   justify-content: center;
   gap: 0.5rem;
   background-color: #000;
+  white-space: nowrap;
   border: 5px solid #f9d5b2;
   cursor: pointer;
   width: 13rem;
@@ -407,7 +408,7 @@ main p {
     font-size: 2.7rem;
   }
   .container h1 + p {
-  max-width: 24rem;
+  max-width: 22rem;
 }
 
   main h1 {
