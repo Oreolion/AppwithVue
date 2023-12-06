@@ -204,7 +204,6 @@ p {
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
-  max-width: 26rem;
 
 }
 
@@ -409,6 +408,7 @@ main p {
   }
   .container h1 + p {
   max-width: 22rem;
+  font-size: 1.1rem;
 }
 
   main h1 {
