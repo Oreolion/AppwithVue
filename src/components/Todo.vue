@@ -253,6 +253,8 @@ main h1 {
 main p {
   color: green;
   max-width: 26rem;
+  text-align: center;
+  margin-left: 2.5rem;
 }
 
 .done .textbox {
@@ -409,6 +411,7 @@ main p {
   .container h1 + p {
   max-width: 22rem;
   font-size: 1.1rem;
+  margin-left: 1rem;
 }
 
   main h1 {
