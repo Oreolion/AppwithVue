@@ -227,6 +227,7 @@ p input[placeholder] {
   color: #f9d5b2;
   margin-bottom: 2rem;
   max-width: 25rem;
+  white-space: nowrap;
 
 }
 
