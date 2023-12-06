@@ -197,6 +197,7 @@ export default {
   gap: 1rem;
   white-space: nowrap;
   max-width: 27rem;
+  font-size: 3rem;
 }
 
 p {
@@ -226,7 +227,7 @@ p input[placeholder] {
 .container h1 + p {
   color: #f9d5b2;
   margin-bottom: 2rem;
-  max-width: 25rem;
+  max-width: 26rem;
   white-space: nowrap;
 
 }
@@ -272,7 +273,7 @@ main p {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   padding: 1.5rem;
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 0.9;
@@ -386,7 +387,7 @@ main p {
 .list-enter-from,
 .list-leave-to {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateX(-50px);
 }
 
 .list-leave-active {
@@ -402,8 +403,15 @@ main p {
     max-width: 28rem;
   }
 
+  .container h1 {
+    font-size: 2.7rem;
+  }
+  .container h1 + p {
+  max-width: 24rem;
+}
+
   main h1 {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
   }
 
   .todo__section .todo__item button {
