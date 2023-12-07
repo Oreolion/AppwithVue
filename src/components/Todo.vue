@@ -528,9 +528,10 @@ p input[placeholder] {
 
   .todo__section .detail__box {
     padding: 1rem 0.5rem;
-    max-width: 20rem;
+    max-width: 21rem;
     flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
   }
 
   .todo__section p {
