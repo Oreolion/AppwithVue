@@ -195,6 +195,7 @@ export default {
   background-color: rgba(360, 360, 360, 0.5);
   padding: 2rem;
   border-radius: 1rem;
+  overflow-x: hidden;
 }
 
 p {
@@ -261,6 +262,7 @@ p input[placeholder] {
   align-items: center;
   border-radius: 4px;
   max-width: 32rem;
+  overflow: hidden;
 }
 
 
