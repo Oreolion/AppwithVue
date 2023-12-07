@@ -71,6 +71,10 @@
             />
           </svg>
         </h1>
+        <div class="detail__box">
+            <p>Number of todos: <span>{{todos.length  }}</span> </p>
+            <p>Completed todos: <span>{{ getCompleted() }}</span> </p>
+        </div>
 
         <p v-if="todos.length == 0">
           HEY {{ todoName }}, YOU CURRENTLY HAVE NOTHING TO DO!!
@@ -156,6 +160,12 @@ export default {
       localStorage.setItem("todos", JSON.stringify(this.todos));
       this.updateUserName();
       this.todo.todoItem = "";
+    },
+    getCompleted () {
+        const result = this.todos.filter((item) => item.done == true).length;
+
+        return result;
+
     },
 
     updateUserName() {
@@ -345,6 +355,36 @@ p input[placeholder] {
 
 .todo__section {
   max-width: 32rem;
+}
+
+.todo__section .detail__box {
+
+    border-radius: .5rem;
+    max-width: 32rem;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 180, 0, 0.2);   
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: flex-start;
+    padding: 1rem;
+    font-family: monospace;
+    justify-content: space-between;
+
+    
+
+
+}
+
+.todo__section .detail__box p {
+    white-space: nowrap;
+}
+
+.todo__section .detail__box p span {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: .2rem;
+
 }
 .todo__section .todo__item {
   display: flex;
