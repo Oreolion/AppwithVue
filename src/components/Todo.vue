@@ -531,7 +531,6 @@ p input[placeholder] {
     max-width: 21rem;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
   }
 
   .todo__section p {
