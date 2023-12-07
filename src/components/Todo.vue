@@ -53,7 +53,6 @@
               d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
             />
           </svg>
-          ADD TODO
         </button>
       </form>
 
@@ -104,7 +103,6 @@
                     d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"
                   />
                 </svg>
-                Edit Todo
               </button>
               <button @click="deleteTodo(eachTodo)">
                 <svg
@@ -118,7 +116,6 @@
                     d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0H284.2c12.1 0 23.2 6.8 28.6 17.7L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32h96l7.2-14.3zM32 128H416V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V128zm96 64c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16z"
                   />
                 </svg>
-                Delete Todo
               </button>
             </div>
           </div>
@@ -188,27 +185,25 @@ export default {
 </script>
 
 <style scoped>
-.container h1 {
-  color: #f9d5b2;
-  text-align: center;
-  margin-bottom: 2rem;
-  text-shadow: 1px 4px 1px rgba(0, 100, 0, 0.671);
+.container {
+  max-width: 39rem;
   display: flex;
-  gap: 1rem;
-  white-space: nowrap;
-  max-width: 27rem;
-  font-size: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto;
+  background-color: rgba(360, 360, 360, 0.5);
+  padding: 2rem 15%;
+  border-radius: 1rem;
 }
 
 p {
   font-weight: bold;
   font-size: 1.2rem;
-  text-align: center;
-
 }
 
 p input {
-  width: 5.5rem;
+  width: 30%;
   height: 2.5rem;
   background-color: rgba(225, 225, 225, 0.5);
   text-align: center;
@@ -220,65 +215,68 @@ p input {
 }
 
 p input[placeholder] {
-    color: #fff;
+  color: #fff;
+}
+
+.container h1 {
+  color: #f9d5b2;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-shadow: 1px 4px 1px rgba(0, 100, 0, 0.671);
+  display: flex;
+  gap: 1rem;
+  white-space: nowrap;
+  max-width: 27rem;
+  font-size: 3rem;
 }
 
 .container h1 + p {
   color: #f9d5b2;
+  max-width: 24rem;
+  text-align: center;
   margin-bottom: 2rem;
-  max-width: 26rem;
-  white-space: nowrap;
-
+ 
 }
 
 .todo__section p {
   color: green;
+  text-align: center;
+
 }
 
-main h1 {
+.todo__section h1 {
   color: #f9d5b2;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
   margin: 3rem auto;
-  padding: 1rem;
+  font-size: 2rem;
   text-shadow: 1px 4px 1px rgba(0, 100, 0, 0.671);
-  white-space: nowrap;
-  max-width: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  max-width: 32rem;
 }
 
-main p {
-  color: green;
-  max-width: 26rem;
-  text-align: center;
-  margin-left: 2.5rem;
-}
 
 .done .textbox {
   text-decoration: line-through;
   text-decoration-color: red;
 }
 
-.container {
-  width: 40rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 5rem auto;
-}
 #todo__container form {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 1.5rem;
   margin-bottom: 3rem;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.5);
-  opacity: 0.9;
   border-radius: 4px;
+  height: 7rem;
+  max-width: 32rem;
 }
 
 .textbox {
@@ -300,7 +298,7 @@ main p {
 
 .todo__input {
   height: 5rem;
-  width: 80%;
+  width:75%;
   border: none;
   background: #eee;
   background-color: rgba(255, 255, 255, 0.5);
@@ -314,8 +312,10 @@ main p {
   color: #444;
   padding-left: 1rem;
 }
+
 .addtodo_btn {
   display: flex;
+  padding: 0.7rem;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
@@ -323,7 +323,8 @@ main p {
   white-space: nowrap;
   border: 5px solid #f9d5b2;
   cursor: pointer;
-  width: 13rem;
+  width: 7rem;
+  height: 4rem;
   border-radius: 1rem;
   color: #fff;
   font-weight: bold;
@@ -336,40 +337,44 @@ main p {
   }
 }
 
+.todo__section {
+  max-width: 32rem;
+}
 .todo__section .todo__item {
   display: flex;
   margin-bottom: 2rem;
   border: 2px solid green;
-  padding: 1.2rem;
-  justify-content: space-between;
+  height: 8rem;
   align-items: center;
-  gap: 1rem;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  gap: 2rem;
   font-size: 1.6rem;
   border-top-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
+  width: 32rem;
 }
 
 .todo__btns {
   display: flex;
+  gap: .6rem;
 }
 
 .todo__section .todo__item button {
   cursor: pointer;
-  height: 4rem;
-  width: 8rem;
+  height: 3rem;
+  width: 4rem;
   white-space: nowrap;
   border: none;
   border-radius: 1rem;
   color: #fff;
   font-weight: bold;
-
   &:hover {
     letter-spacing: 1px;
   }
 }
 
 .todo__section .todo__item button:first-child {
-  margin-right: 1rem;
   background-color: rgba(0, 255, 0, 0.3);
   &:hover {
     background-color: green;
@@ -402,29 +407,32 @@ main p {
 
 @media (max-width: 650px) {
   .container {
-    max-width: 28rem;
+    max-width: 29rem;
+    padding: 2rem 25%;
+  }
+
+  #todo__container form {
+    width: 26rem;
   }
 
   .container h1 {
-    font-size: 2.7rem;
+    font-size: 2rem;
   }
+
   .container h1 + p {
-  max-width: 22rem;
-  font-size: 1.1rem;
-  margin-left: 1rem;
-}
-
-  main h1 {
-    font-size: 2.1rem;
+    font-size: 1.1rem;
   }
 
-  .todo__section .todo__item button {
-    width: 8rem;
-    height: 3rem;
+  .todo__section h1 {
+    font-size: 1.6rem;
+  }
+
+  .todo__section .todo__item {
+    max-width: 27rem;
+    gap: 1rem;
   }
 
   .textbox {
-    width: 70%;
     height: 5rem;
   }
 
@@ -435,26 +443,28 @@ main p {
 
   .todo__btns {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
   }
 }
 
 @media (max-width: 450px) {
-
-    .container {
+  .container {
     max-width: 26rem;
   }
+
+  #todo__container form {
+    max-width: 24rem;
+  }
   .textbox {
-    width: 7rem;
+    width: 9rem;
   }
   .checkbox {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
-  .todo__section .todo__item button {
-    width: 6rem;
+  .todo__section .todo__item {
+    max-width: 24rem;
+    gap: 1rem;
   }
 
   .todo__btns {
