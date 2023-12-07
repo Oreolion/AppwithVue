@@ -72,8 +72,12 @@
           </svg>
         </h1>
         <div class="detail__box">
-            <p>Number of todos: <span>{{todos.length  }}</span> </p>
-            <p>Completed todos: <span>{{ getCompleted() }}</span> </p>
+          <p>
+            Number of todos: <span>{{ todos.length }}</span>
+          </p>
+          <p>
+            Completed todos: <span>{{ getCompleted() }}</span>
+          </p>
         </div>
 
         <p v-if="todos.length == 0">
@@ -161,11 +165,10 @@ export default {
       this.updateUserName();
       this.todo.todoItem = "";
     },
-    getCompleted () {
-        const result = this.todos.filter((item) => item.done == true).length;
+    getCompleted() {
+      const result = this.todos.filter((item) => item.done == true).length;
 
-        return result;
-
+      return result;
     },
 
     updateUserName() {
@@ -249,15 +252,12 @@ p input[placeholder] {
   max-width: 32rem;
   text-align: center;
   margin-bottom: 2rem;
- 
 }
 
 .todo__section p {
   color: green;
   text-align: center;
-  max-width: 32rem;
-
-
+  max-width: 30rem;
 }
 
 .todo__section h1 {
@@ -274,7 +274,6 @@ p input[placeholder] {
   max-width: 32rem;
   overflow: hidden;
 }
-
 
 .done .textbox {
   text-decoration: line-through;
@@ -314,7 +313,7 @@ p input[placeholder] {
 
 .todo__input {
   height: 5rem;
-  width:75%;
+  width: 75%;
   border: none;
   background: #eee;
   background-color: rgba(255, 255, 255, 0.5);
@@ -358,33 +357,27 @@ p input[placeholder] {
 }
 
 .todo__section .detail__box {
-
-    border-radius: .5rem;
-    max-width: 32rem;
-    margin-bottom: 1rem;
-    background-color: rgba(0, 180, 0, 0.2);   
-    display: flex;
-    flex-direction: row;
-    gap: .5rem;
-    align-items: flex-start;
-    padding: 1rem;
-    font-family: monospace;
-    justify-content: space-between;
-
-    
-
-
+  border-radius: 0.5rem;
+  max-width: 32rem;
+  margin-bottom: 1rem;
+  background-color: rgba(0, 180, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: flex-start;
+  padding: 1rem;
+  font-family: monospace;
+  justify-content: space-between;
 }
 
 .todo__section .detail__box p {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .todo__section .detail__box p span {
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: .2rem;
-
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2rem;
 }
 .todo__section .todo__item {
   display: flex;
@@ -403,7 +396,7 @@ p input[placeholder] {
 
 .todo__btns {
   display: flex;
-  gap: .6rem;
+  gap: 0.6rem;
 }
 
 .todo__section .todo__item button {
@@ -490,15 +483,30 @@ p input[placeholder] {
   .todo__btns {
     display: flex;
   }
+
+  .todo__section .detail__box {
+    padding: 1rem 0.5rem;
+    max-width: 27rem;
+  }
+
+  .todo__section .detail__box p {
+    font-size: 1rem;
+  }
+
+  .todo__section p {
+    max-width: 27rem;
+  }
 }
 
 @media (max-width: 450px) {
   .container {
-    max-width: 26rem;
+    max-width: 24rem;
   }
 
   #todo__container form {
-    max-width: 24rem;
+    max-width: 21rem;
+    margin: 0 auto;
+    gap: .4rem;
   }
   .textbox {
     width: 9rem;
@@ -509,13 +517,25 @@ p input[placeholder] {
   }
 
   .todo__section .todo__item {
-    max-width: 24rem;
+    max-width: 21rem;
     gap: 1rem;
   }
 
   .todo__btns {
     display: flex;
     flex-direction: column;
+  }
+
+  .todo__section .detail__box {
+    padding: 1rem 0.5rem;
+    max-width: 20rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .todo__section p {
+    max-width: 21rem;
+    font-size: 1.1rem;
   }
 }
 </style>
