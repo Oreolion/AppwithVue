@@ -193,7 +193,7 @@ export default {
   justify-content: center;
   margin: 5rem auto;
   background-color: rgba(360, 360, 360, 0.5);
-  padding: 2rem 15%;
+  padding: 2rem;
   border-radius: 1rem;
 }
 
@@ -233,7 +233,7 @@ p input[placeholder] {
 
 .container h1 + p {
   color: #f9d5b2;
-  max-width: 24rem;
+  max-width: 32rem;
   text-align: center;
   margin-bottom: 2rem;
  
@@ -242,6 +242,8 @@ p input[placeholder] {
 .todo__section p {
   color: green;
   text-align: center;
+  max-width: 32rem;
+
 
 }
 
@@ -412,7 +414,7 @@ p input[placeholder] {
   }
 
   #todo__container form {
-    width: 26rem;
+    max-width: 27rem;
   }
 
   .container h1 {
