@@ -227,7 +227,7 @@ p input[placeholder] {
   display: flex;
   gap: 1rem;
   white-space: nowrap;
-  max-width: 27rem;
+  max-width: 32rem;
   font-size: 3rem;
 }
 
@@ -410,7 +410,7 @@ p input[placeholder] {
 @media (max-width: 650px) {
   .container {
     max-width: 29rem;
-    padding: 2rem 25%;
+    padding: 2rem;
   }
 
   #todo__container form {
