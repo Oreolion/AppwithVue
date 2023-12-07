@@ -222,6 +222,8 @@ p input[placeholder] {
   color: #f9d5b2;
   text-align: center;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   margin-bottom: 2rem;
   text-shadow: 1px 4px 1px rgba(0, 100, 0, 0.671);
   display: flex;
