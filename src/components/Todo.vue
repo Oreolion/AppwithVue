@@ -204,7 +204,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5rem auto;
+  margin: 3.5rem auto;
   background-color: rgba(360, 360, 360, 0.5);
   padding: 2rem;
   border-radius: 1rem;
